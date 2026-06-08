@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio personal de Pedro Pérez, desarrollador web y diseñador gráfico.">
+    <meta name="keywords" content="Portafolio, Pedro Pérez, desarrollo web, diseño gráfico, proyectos, contacto">
+    <meta name="author" content="Pedro Pérez">
+    <title>Portafolio de Pedro Pérez</title>
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body{
+        background-color:#f4f4f4;
+        color:#333;
+        line-height:1.6;
+    }
+
+    header{
+        background:#222;
+        color:white;
+        padding:20px 40px;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+    }
+
+    .logo{
+        font-size:1.5rem;
+        font-weight:bold;
+    }
+
+    nav ul{
+        list-style:none;
+        display:flex;
+        gap:20px;
+    }
+
+    nav a{
+        color:white;
+        text-decoration:none;
+    }
+
+    nav a:hover{
+        color:#00bcd4;
+    }
+
+    .hero{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        gap:50px;
+        padding:60px 40px;
+        background:white;
+        flex-wrap:wrap;
+    }
+
+    .hero img{
+        width:250px;
+        height:250px;
+        border-radius:50%;
+        object-fit:cover;
+    }
+
+    .hero-content{
+        max-width:500px;
+    }
+
+    .hero-content h1{
+        font-size:2.5rem;
+        margin-bottom:10px;
+    }
+
+    .hero-content p{
+        margin-bottom:20px;
+    }
+
+    .btn{
+        display:inline-block;
+        padding:12px 24px;
+        background:#00bcd4;
+        color:white;
+        text-decoration:none;
+        border-radius:5px;
+    }
+
+    .btn:hover{
+        background:#0097a7;
+    }
+
+    section{
+        padding:60px 40px;
+    }
+
+    h2{
+        text-align:center;
+        margin-bottom:30px;
+    }
+
+    .about{
+        max-width:800px;
+        margin:auto;
+        text-align:center;
+    }
+
+    .projects{
+        display:grid;
+        grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+        gap:20px;
+    }
+
+    .card{
+        background:white;
+        padding:20px;
+        border-radius:10px;
+        box-shadow:0 2px 8px rgba(0,0,0,.1);
+        text-align:center;
+    }
+
+    .card h3{
+        margin-bottom:10px;
+    }
+
+    .contact{
+        text-align:center;
+    }
+
+    .social-links a{
+        margin:0 10px;
+        text-decoration:none;
+        color:#00bcd4;
+        font-weight:bold;
+    }
+
+    footer{
+        background:#222;
+        color:white;
+        text-align:center;
+        padding:20px;
+    }
+</style>
+
+</head>
+<body>
+
+<header>
+    <div class="logo">Pedro Pérez</div>
+
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero" id="inicio">
+    <img src="https://via.placeholder.com/250" alt="Foto de Pedro Pérez">
+
+    <div class="hero-content">
+        <h1>Pedro Pérez</h1>
+        <h3>Desarrollador Web y Diseñador Gráfico</h3>
+
+        <p>
+            Soy estudiante de desarrollo web y diseño gráfico.
+            Me apasiona crear experiencias digitales atractivas,
+            funcionales y centradas en el usuario.
+        </p>
+
+        <a href="#proyectos" class="btn">Ver proyectos</a>
+    </div>
+</section>
+
+<section id="sobre-mi">
+    <h2>Sobre mí</h2>
+
+    <div class="about">
+        <p>
+            Actualmente me encuentro fortaleciendo mis conocimientos
+            en HTML, CSS, JavaScript y diseño visual. Busco participar
+            en proyectos donde pueda aplicar mis habilidades y seguir
+            creciendo profesionalmente.
+        </p>
+    </div>
+</section>
+
+<section id="proyectos">
+    <h2>Proyectos Destacados</h2>
+
+    <div class="projects">
+
+        <div class="card">
+            <h3>Proyecto 1</h3>
+            <p>Sitio web responsivo para una pequeña empresa.</p>
+        </div>
+
+        <div class="card">
+            <h3>Proyecto 2</h3>
+            <p>Diseño de identidad visual y branding.</p>
+        </div>
+
+        <div class="card">
+            <h3>Proyecto 3</h3>
+            <p>Aplicación web desarrollada con HTML, CSS y JavaScript.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="contacto">
+    <h2>Contacto y Redes</h2>
+
+    <div class="contact">
+        <p>Email: pedro@email.com</p>
+
+        <div class="social-links">
+            <a href="#">LinkedIn</a>
+            <a href="#">GitHub</a>
+            <a href="#">Behance</a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 Pedro Pérez. Todos los derechos reservados.</p>
+</footer>
+</body>
+</html>
