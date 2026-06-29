@@ -1,0 +1,177 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #14277e;
+    color: rgb(22, 75, 134);
+    line-height: 1.6;
+}
+
+header{
+    background: linear-gradient(90deg,#107aac,#4659c5);
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0,0,0,0.7);
+}
+
+header h1{
+    font-size: 3rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+header p{
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #dcdcdc;
+}
+
+h2,h3{
+    color:#00bfff;
+    margin-bottom:15px;
+}
+
+nav{
+    background:#17377c;
+    padding:20px;
+    border-bottom: 3px solid #1c1d86;
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    list-style:none;
+    flex-wrap: wrap;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    background:#003087;
+    padding:12px 25px;
+    border-radius:10px;
+    transition:0.3s;
+    font-weight:bold;
+}
+
+nav a:hover{
+    background:#144bc4;
+    transform:translateY(-5px);
+    box-shadow:0 0 15px #10757c;
+}
+
+section,
+article,
+aside{
+    background:#111827;
+    margin:25px auto;
+    width:90%;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 0 15px rgba(0,191,255,0.2);
+    transition:0.3s;
+}
+
+section:hover,
+article:hover,
+aside:hover{
+    transform:scale(1.01);
+    box-shadow:0 0 25px rgba(0,191,255,0.5);
+}
+
+ul{
+    list-style:none;
+}
+
+li{
+    background:#1f2937;
+    margin:12px 0;
+    padding:15px;
+    border-left:5px solid #10427c;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+li:hover{
+    background:#0a3e91;
+    transform:translateX(8px);
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#000;
+    border-top:3px solid #134bb3;
+    margin-top:30px;
+}
+
+#logo{
+    font-size:3.5rem;
+    color:#ffffff;
+    text-shadow:0 4px 14px rgba(0,0,0,0.6);
+    letter-spacing:3px;
+}
+
+#destinos{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    align-items:start;
+    padding-top:8px;
+}
+
+#destinos .tarjeta{
+    padding:20px;
+    background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));
+    border:1px solid rgba(255,255,255,0.03);
+}
+
+#destinos .tarjeta:first-child{
+    border-left:4px solid #ffd54f;
+    transform:translateY(-6px);
+}
+
+.menu li:first-child a{
+    background:#0a74ff;
+    box-shadow:0 6px 18px rgba(10,116,255,0.22);
+}
+
+section ul li:first-child,
+aside ul li:first-child{
+    border-left-color:#22c1ff;
+}
+
+#copyright{
+    color:#266de9;
+    font-size:0.9rem;
+    margin-top:6px;
+}
+
+#logo::before{
+    content:"🌊";
+    margin-right:10px;
+    font-size:1.2rem;
+    vertical-align:middle;
+}
+
+#destinos .tarjeta h3::before{
+    content:"🗺️";
+    display:inline-block;
+    width:10px;
+    height:10px;
+    background:#ffd54f;
+    border-radius:50%;
+    margin-right:10px;
+    vertical-align:middle;
+}
+
+#copyright::before{
+    content:"© ";
+    color:#2d2fcf;
+    margin-right:6px;
+}
