@@ -1,0 +1,176 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box; /* El box-sizing se usa para que el ancho y alto incluyan padding y borde */
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #11c1ced3;
+    color: rgb(22, 75, 134);
+    line-height: 1.6;
+    width: 100%;
+    min-height: 100vh;
+}
+
+header{
+    background: linear-gradient(90deg,#107aac,#2a85a1c7);
+    padding: clamp(24px, 4vw, 40px);
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0,0,0,0.7);
+    min-height: 45vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1{
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+header p{
+    margin-top: 10px;
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    color: #dcdcdc;
+}
+
+h2,h3{
+    color:#00bfff;
+    margin-bottom:15px;
+}
+
+nav{
+    background:#17377c;
+    padding: clamp(15px, 2vw, 20px);
+    border-bottom: 3px solid #1c1d86;
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    gap: clamp(10px, 2vw, 20px);
+    list-style:none;
+    flex-wrap: wrap;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    background:#003087;
+    padding: clamp(10px, 2vw, 12px) clamp(16px, 3vw, 25px);
+    border-radius:10px;
+    transition:0.3s;
+    font-weight:bold;
+    display: inline-block;
+}
+
+nav a:hover{
+    background:#144bc4;
+    transform:translateY(-5px);
+    box-shadow:0 0 15px #10757c;
+}
+
+section,
+article,
+aside{
+    background:#111827;
+    margin:25px auto;
+    width:min(90%, 1100px);
+    padding:clamp(18px, 3vw, 25px);
+    border-radius:15px;
+    box-shadow:0 0 15px rgba(0,191,255,0.2);
+    transition:0.3s;
+}
+
+section:hover,
+article:hover,
+aside:hover{
+    transform:scale(1.01);
+    box-shadow:0 0 25px rgba(0,191,255,0.5);
+}
+
+ul{
+    list-style:none;
+}
+
+li{
+    background:#152233;
+    margin:12px 0;
+    padding:15px;
+    border-left:5px solid #10427c;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+li:hover{
+    background:#0a3e91;
+    transform:translateX(8px);
+}
+
+footer{
+    text-align:center;
+    padding:clamp(16px, 3vw, 20px);
+    background:#000;
+    border-top:3px solid #134bb3;
+    margin-top:30px;
+}
+
+#logo{
+    font-size:3.5rem;
+    color:#ffffff;
+    text-shadow:0 4px 14px rgba(0,0,0,0.6);
+    letter-spacing:3px;
+}
+
+#logo::before{
+    content:"🗺️";
+    margin-right:10px;
+    font-size:1.2rem;
+    vertical-align:middle;
+}
+
+#menu{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    align-items:start;
+    padding-top:8px;
+}
+
+#menu .tarjeta{
+    padding:20px;
+    background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));
+    border:1px solid rgba(255,255,255,0.03);
+}
+
+#menu .tarjeta:first-child{
+    border-left:4px solid #ffd54f;
+    transform:translateY(-6px);
+}
+
+.menu li:first-child a{
+    background:#0a74ff;
+    box-shadow:0 6px 18px rgba(10,116,255,0.22);
+}
+
+section ul li:first-child,
+aside ul li:first-child{
+    border-left-color:#22c1ff;
+}
+
+#copyright::before{
+    content:"© ";
+    color:#2d2fcf;
+    margin-right:6px;
+    max-width: 10px;
+}
+
+/*px -> se usó px para los bordes y sombras, para que se vean bien en cualquier pantalla
+rem -> se usó rem para los tamaños de fuente, para que se adapten mejor a la configuración del usuario
+% -> Se usó porcentaje y tamaños relativos para que la página se adapte mejor.
+vh -> Se usó vh para el header y footer, para que se adapte a la altura de la pantalla
+vw -> se usó vw para los paddings y márgenes, para que se adapten al ancho de la pantalla
+*/
