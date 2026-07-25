@@ -1,0 +1,270 @@
+html {
+	scroll-behavior: smooth;   /* establece un comportamiento de desplazamiento suave para los enlaces internos */
+}
+
+body {
+	font-family: 'Rajdhani', sans-serif;
+	background:
+		radial-gradient(circle at top left, rgba(0, 255, 209, 0.15), transparent 30%),
+		radial-gradient(circle at top right, rgba(255, 87, 34, 0.16), transparent 28%),
+		linear-gradient(180deg, #07111f 0%, #09182b 48%, #04070d 100%);
+	color: #edf6ff;
+} /* establece la fuente predeterminada para el cuerpo del documento y un fondo con gradientes radiales y lineales */
+
+h1,
+h2,
+h3,
+.navbar-brand,
+.section-tag,
+.footer-title {
+	font-family: 'Orbitron', sans-serif;
+} /* establece la fuente para los encabezados y algunos elementos de la barra de navegación y el pie de página */
+
+.navbar {
+	background: rgba(4, 9, 18, 0.82);
+	backdrop-filter: blur(14px);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+} /* establece el fondo de la barra de navegación con un color semitransparente y un efecto de desenfoque, y agrega un borde inferior */
+
+.navbar-brand {
+	display: inline-flex;
+	align-items: center;
+	letter-spacing: 0.08em;
+	font-size: 1.2rem;
+} /* establece el estilo de la marca de la barra de navegación, incluyendo la alineación de los elementos y el espaciado entre letras */
+
+.brand-logo {
+	width: 56px;
+	height: 56px;
+	object-fit: contain;
+	border-radius: 14px;
+	background: rgba(255, 255, 255, 0.06);
+	padding: 0.2rem;
+	box-shadow: 0 0 22px rgba(86, 240, 208, 0.18);
+} /* establece el estilo del logotipo de la marca, incluyendo el tamaño, el ajuste del objeto, el radio del borde, el fondo y la sombra */
+
+.nav-link {
+	color: #d2e8ff;
+	font-weight: 600;
+} /* establece el color y el peso de la fuente para los enlaces de navegación */
+
+.nav-link:hover,
+.nav-link:focus,
+.nav-link.active {
+	color: #56f0d0 !important;
+} /* establece el color de los enlaces de navegación cuando se pasa el cursor sobre ellos, se enfocan o están activos */
+
+.hero-section {
+	min-height: 100vh;
+	padding: 8rem 0 5rem;
+} /* establece la altura mínima de la sección principal y el relleno superior e inferior */
+
+.eyebrow,
+.section-tag,
+.offer-label {
+	display: inline-block;
+	padding: 0.45rem 0.85rem;
+	border-radius: 999px;
+	background: rgba(86, 240, 208, 0.14);
+	color: #7cf7df;
+	font-weight: 700;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	font-size: 0.8rem;
+} /* establece el estilo de las etiquetas de sección, incluyendo el relleno, el radio del borde, el fondo, el color del texto, el peso de la fuente, el espaciado entre letras y la transformación del texto */
+
+.hero-section h1 {
+	max-width: 12ch;
+} /* establece la anchura máxima del encabezado principal en la sección principal */
+
+.hero-section .lead,
+.section-heading p,
+.offer-section p,
+.form-wrapper p,
+.footer-section p,
+.footer-section a {
+	color: #bdd1e7;
+} /* establece el color del texto para varios elementos de la sección principal, encabezados de sección, secciones de ofertas, formularios y pie de página */
+
+.hero-image {
+	max-height: 530px;
+	width: 100%;
+	object-fit: cover;
+	border-radius: 28px;
+	box-shadow: 0 30px 80px rgba(0, 0, 0, 0.38);
+	border: 1px solid rgba(255, 255, 255, 0.1);
+} /* establece el estilo de la imagen principal, incluyendo la altura máxima, el ancho, el ajuste del objeto, el radio del borde, la sombra y el borde */
+
+.section-space {
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+} /* establece el relleno superior e inferior para las secciones de la página */
+
+.section-heading {
+	max-width: 760px;
+	margin: 0 auto;
+} /* establece el ancho máximo y el margen automático para centrar los encabezados de sección */
+
+.section-heading p {
+	max-width: 640px;
+} /* establece el ancho máximo para los párrafos dentro de los encabezados de sección */
+
+.game-card {
+	overflow: hidden;
+	background: rgba(7, 15, 27, 0.92);
+	border-radius: 22px;
+	transition: transform 0.28s ease, box-shadow 0.28s ease;
+} /* establece el estilo de las tarjetas de juego, incluyendo el desbordamiento, el fondo, el radio del borde y la transición para transformaciones y sombras */
+
+.game-card:hover {
+	transform: translateY(-8px);
+	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.28) !important;
+} /* establece el estilo de las tarjetas de juego cuando se pasa el cursor sobre ellas, incluyendo la transformación y la sombra */
+
+.game-card img {
+	height: 220px;
+	object-fit: cover;
+} /* establece el estilo de las imágenes dentro de las tarjetas de juego, incluyendo la altura y el ajuste del objeto */
+
+.card-title,
+.offer-box h3,
+.footer-subtitle {
+	color: #ffffff;
+} /* establece el color del texto para los títulos de las tarjetas, los encabezados de las cajas de oferta y los subtítulos del pie de página */
+
+.card-text {
+	color: #b5cadf;
+} /* establece el color del texto para los párrafos dentro de las tarjetas */
+
+.btn-primary {
+	background: linear-gradient(135deg, #00d7a2, #00a4ff);
+	border: none;
+	color: #03131f;
+	font-weight: 700;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+	background: linear-gradient(135deg, #2de7b7, #39b8ff);
+	color: #03131f;
+} /* establece el estilo de los botones primarios, incluyendo el fondo, el borde, el color del texto y el peso de la fuente, así como los estilos al pasar el cursor sobre ellos o enfocarlos */
+
+.btn-outline-primary {
+	border-color: rgba(86, 240, 208, 0.55);
+	color: #7cf7df;
+} /* establece el estilo de los botones de contorno primarios, incluyendo el color del borde y el color del texto */
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+	background: #56f0d0;
+	border-color: #56f0d0;
+	color: #04111b;
+} /* establece el estilo de los botones de contorno primarios cuando se pasa el cursor sobre ellos o se enfocan, incluyendo el color de fondo, el color del borde y el color del texto */
+
+.offer-section {
+	background: linear-gradient(135deg, rgba(3, 12, 22, 0.95), rgba(9, 44, 67, 0.92));
+	border-top: 1px solid rgba(255, 255, 255, 0.07);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+} /* establece el estilo de la sección de ofertas, incluyendo el fondo y los bordes superior e inferior */
+
+.offer-box,
+.form-wrapper {
+	background: rgba(8, 18, 31, 0.92);
+	border: 1px solid rgba(255, 255, 255, 0.08);
+	border-radius: 24px;
+	padding: 2rem;
+	box-shadow: 0 18px 50px rgba(0, 0, 0, 0.22);
+} /* establece el estilo de las cajas de oferta y los formularios, incluyendo el fondo, el borde, el radio del borde, el relleno y la sombra */
+
+.offer-box {
+	text-align: left;
+} /* establece el estilo de las cajas de oferta, incluyendo el fondo, el borde, el radio del borde, el relleno y la sombra */
+
+.form-label,
+.form-check-label {
+	color: #e6f4ff;
+	font-weight: 600;
+} /* establece el estilo de las etiquetas de formulario y las etiquetas de verificación, incluyendo el color del texto y el peso de la fuente */
+
+.form-control,
+.form-select {
+	background-color: rgba(255, 255, 255, 0.06);
+	border: 1px solid rgba(255, 255, 255, 0.12);
+	color: #f1f7ff;
+	padding: 0.85rem 1rem;
+} /* establece el estilo de los campos de formulario y los selectores, incluyendo el color de fondo, el borde, el color del texto y el relleno */
+
+.form-control::placeholder {
+	color: #93acc5;
+} /* establece el estilo de los campos de formulario y los selectores, incluyendo el color de fondo, el borde, el color del texto y el relleno */
+
+.form-control:focus,
+.form-select:focus {
+	background-color: rgba(255, 255, 255, 0.08);
+	border-color: #56f0d0;
+	box-shadow: 0 0 0 0.25rem rgba(86, 240, 208, 0.16);
+	color: #ffffff;
+} /* establece el estilo de los campos de formulario y los selectores, incluyendo el color de fondo, el borde, el color del texto, el relleno y el enfoque */
+
+.footer-section {
+	background: rgba(2, 5, 10, 0.98);
+} /* establece el estilo de la sección del pie de página, incluyendo el fondo, los títulos, los enlaces y las líneas horizontales */
+
+.footer-title {
+	font-size: 1.5rem;
+} /* establece el estilo de los títulos en la sección del pie de página, incluyendo el tamaño de fuente */
+
+.footer-subtitle {
+	margin-bottom: 1rem;
+} /* establece el estilo de los títulos y subtítulos en la sección del pie de página, incluyendo el tamaño de fuente y el margen inferior */
+ 
+.footer-section a {
+	display: block;
+	text-decoration: none;
+	margin-bottom: 0.6rem;
+} /* establece el estilo de los enlaces en la sección del pie de página, incluyendo el color, la decoración del texto y el margen inferior */
+
+.footer-section a:hover,
+.footer-section a:focus {
+	color: #7cf7df;
+} /* establece el estilo de los enlaces en la sección del pie de página, incluyendo el color, la decoración del texto y el margen inferior */
+
+.footer-section hr {
+	margin: 2rem 0 1.5rem;
+	border-color: rgba(255, 255, 255, 0.12);
+} /* establece el estilo de la sección del pie de página, incluyendo el fondo, los títulos, los enlaces y las líneas horizontales */
+
+@media (max-width: 991.98px) {
+	.hero-section {
+		min-height: auto;
+		padding-top: 7rem;
+	}
+
+	.hero-section h1 {
+		max-width: none;
+	}
+
+	.navbar-collapse {
+		margin-top: 1rem;
+		padding: 1rem;
+		background: rgba(3, 8, 15, 0.95);
+		border-radius: 18px;
+	}
+
+	.brand-logo {
+		width: 48px;
+		height: 48px;
+	}
+} /*estilos responsivos para pantallas medianas y pequeñas, ajustando la altura de la sección principal, el tamaño del logotipo y el estilo de la barra de navegación colapsada */
+
+@media (max-width: 575.98px) {
+	.hero-section {
+		padding-bottom: 3rem;
+	}
+
+	.offer-box,
+	.form-wrapper {
+		padding: 1.5rem;
+	}
+}
+/*estilos para la sección de héroe, tarjetas de juegos, botones, secciones de ofertas y formularios, incluyendo estilos responsivos para diferentes tamaños de pantalla */
