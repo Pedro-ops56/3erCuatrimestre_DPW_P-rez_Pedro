@@ -1,0 +1,61 @@
+/* Estilos para el contenedor principal del directorio de usuarios */
+::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* Estilos para el directorio de usuarios */
+:root {
+    --color-primario: #3498db;
+    --color-secundario: #2ecc71;
+    --color-terciario: #e74c3c;
+    --fuente-base: 1rem;
+}
+
+/* Estilos generales */
+body {
+    background-color: #f4f6f9;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilos para los botones */
+.navbar-brand {
+    font-weight: 700;
+    letter-spacing: 0.04em;
+}
+
+/* Estilos para los botones de acción */
+.container .row .card .btn-primary {
+    background-color: var(--color-secundario);
+    border-color: var(--color-secundario);
+    color: #fff;
+}
+
+/* Estilos para los botones de acción al pasar el mouse o enfocar */
+.container .row .card .btn-primary:hover,
+.container .row .card .btn-primary:focus {
+    background-color: var(--color-terciario);
+    border-color: var(--color-terciario);
+}
+
+/* Estilos para las tarjetas de usuario */
+.card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Estilos para las tarjetas de usuario al pasar el mouse */
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilos para los modales */
+.modal-content {
+    border-radius: 0.75rem;
+}

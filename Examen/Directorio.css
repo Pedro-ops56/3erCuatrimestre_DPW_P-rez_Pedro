@@ -1,0 +1,92 @@
+/* Variables de color y tipografía */
+:root {
+    --color-primario: #3498db;
+    --color-secundario: #2ecc71;
+    --color-terciario: #e74c3c;
+    --fuente-base: 1rem;
+    --borde-suave: #dfe6e9;
+}
+
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 1rem;
+    background-color: #f7f9fc;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: var(--fuente-base);
+    line-height: 1.5;
+}
+
+/* Estilos para el contenedor del directorio */
+.grid-directorio {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Estilos para el contenedor del directorio en pantallas medianas */
+@media (min-width: 768px) {
+    /* Estilos para el contenedor del directorio en pantallas medianas */
+    .grid-directorio {
+        /* Cambiar a dos columnas en pantallas medianas */
+        grid-template-columns: 2fr 1fr;
+        /* Ajustar el espacio entre las columnas */
+        gap: 1.25rem;
+    }
+}
+
+/* Estilos para el contenedor del directorio en pantallas grandes */
+@media (min-width: 1200px) {
+    /* Estilos para el contenedor del directorio en pantallas grandes */
+    .grid-directorio {
+        /* Cambiar a tres columnas en pantallas grandes */
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+/* Estilos para las tarjetas de usuario */
+.card-usuario {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: linear-gradient(135deg, var(--color-primario), #2980b9);
+    color: white;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+/* Estilos para la imagen del usuario dentro de la tarjeta */
+.card-usuario img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid white;
+    flex-shrink: 0;
+}
+
+/* Estilos para el contenedor de texto dentro de la tarjeta */
+.card-usuario .texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+
+/* Estilos para el nombre del usuario dentro de la tarjeta */
+.card-usuario .texto h3 {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+/* Estilos para la información adicional del usuario dentro de la tarjeta */
+.card-usuario .texto p {
+    margin: 0.2rem 0 0;
+    font-size: calc(var(--fuente-base) * 0.9);
+    opacity: 0.95;
+}
